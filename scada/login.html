@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SCADA</title>
+
+	<!-- Favicon and CSS file load -->
+	<link rel="stylesheet" href="css/login_style.css">
+	<link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+	<nav class="header">
+		<!-- Website icon -->
+		<a href="https://www.dotcom.co.mz/" target="_blank" style="margin: 1em;">
+			<img src="images/fipag_logo.png" alt="fipag_logo">
+		</a>
+
+		<!-- Website title -->
+		<b>SCADA</b>
+	</nav>
+
+    <form id="login" name="login" action="php/login.php" method="POST">
+		<p id="title" >Login</p><br>
+
+		<div>
+			<label for="contact">Contacto</label>
+			<input type="tel" id="contact" name="contact" placeholder="8X XXX XXXX" required>
+		</div><br>
+
+		<div>
+			<label for="password">Palavra passee</label>
+			<input type="password" id="password" name="password" placeholder=" * * * *" required>
+		</div><br>
+
+		<input type="submit" value="Entrar"><br>
+
+		<i id="login-link">Não tem uma conta? <a onclick="goToRegister()" href="signup.html">Cria aqui</a></i>
+	</form>
+
+	<footer class="company_info">
+		<address style="margin: 8px;">
+			Av. Filipe Samuel Magaia, nº 1291 R/C <br>Maputo - Moçambique <br>P.O. Box 91 
+		</address>
+
+		<div>
+			<p><b>Tel</b>: (+258) 21 308 881, (+258) 21 315529 <br><br><b>Fax</b>: (+258) 21 308 840</p>
+		</div>
+
+		<div>
+			<p>info@fipag.co.mz</p>
+		</div>
+
+		<div>
+			<p>08h00 - 17h00</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
