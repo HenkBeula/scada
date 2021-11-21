@@ -1,7 +1,7 @@
 # scada
 ## Desenvolvimento de um sistema de controlo de Abastecimento de Agua
 
-<div style="text-align: right"> 
+<div style="text-align: justify"> 
   Desenvolvimento de um sistema de controlo de Abastecimento de Agua
   Interface amigável e relacionada. Deve apresentar o logótipo da Empresa proprietária da Fabrica. 
   O sistema deve ter dois acessos (Admin e usuário geral), todos codificados. Deve armazenar: Dados 
