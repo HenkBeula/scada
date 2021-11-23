@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt">
-<body>
 <?php
 
 function check_login($con)
@@ -19,11 +16,12 @@ function check_login($con)
 			$user_data = mysqli_fetch_assoc($result);
 			return $user_data;
 		}
-	}
+	}else{
 
-	//redirect to login
-	header("Location: login.php");
-	die;
+		//redirect to login
+		header("Location: login.html");
+		die;
+    }
 
 }
 
@@ -47,5 +45,3 @@ function random_num($length)
 	return $text;
 }
 ?>
-</body>
-</html>

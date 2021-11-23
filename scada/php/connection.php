@@ -1,4 +1,3 @@
-<body>
 <?php
 
 $dbhost = "localhost";
