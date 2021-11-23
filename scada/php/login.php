@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt">
-<body>
 <?php 
 
 session_start();
@@ -47,5 +44,3 @@ session_start();
 	}
 
 ?>
-</body>
-</html>

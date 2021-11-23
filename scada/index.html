@@ -7,14 +7,14 @@
 	<title>SCADA</title>
 	<!-- Favicon and CSS file load -->
 	<link rel="stylesheet" href="css/index.css">
-	<link rel="icon" href="images/favicon.png">
+	<link rel="icon" href="images/scada.png">
 </head>
 <body>
 	
 	<nav class="header">
 		<!-- Website icon -->
 		<a href="index.html" style="margin: 1em;">
-			<img src="images/*.png" alt="scada_logo">
+			<img src="images/scada.png" alt="scada" id="scada-logo">
 		</a>
 
 		<!-- Website title -->
@@ -55,7 +55,7 @@
 		</div>
 
 		<div>
-			<p>info@fipag.co.mz</p>
+			<p>info@scada.co.mz</p>
 		</div>
 
 		<div>
@@ -66,6 +66,7 @@
 	<script type="text/javascript" src="js/main.js"></script>
 	<?php
 		require("php/session.php");
+		require("php/session_timeout.php");
 	?>
 </body>
 </html>
