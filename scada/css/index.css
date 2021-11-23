@@ -33,6 +33,7 @@ input:focus {
 }
 
 input[type=submit] {
+	width: -moz-fit-content;
 	width:fit-content;
 	height: 4vh;
 	background-color: #7FA5CA;
@@ -74,12 +75,10 @@ label {
 	/*text-align: center;*/
 }
 .header #logout {
-	color: #242424;
 	position:absolute;
-	right: 1%;
-	font-size: 1.1em;
-	font-weight: 500;
-	font-style: normal;
+	right: 1em;
+	width: auto;
+	height: 0.9em;
 }
 
 * a {

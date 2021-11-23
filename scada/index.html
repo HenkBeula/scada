@@ -17,7 +17,9 @@
 
 		<!-- Website title -->
 		<b>SCADA</b>
-		<a href="php/logout.php" id="logout">Logout</a>
+		<a href="php/logout.php" id="logout">
+			<img src="ico/logout.svg" alt="scada_logo">
+		</a>
 	</nav>
 
 	<form id="water_consumption" name="water_consumption" action="/php/insert.php" onsubmit="return validateForm()" method="POST">
@@ -35,7 +37,7 @@
 
 		<div>
 			<label for="consumed_water">Água consumido</label>
-			<input type="tel" id="consumed_water" name="consumed_water" placeholder="Metros cúbicos" required>
+			<input type="tel" id="consumed_water" name="consumed_water" placeholder="Metros cúbicos (m3)" required>
 		</div><br>
 
 		<input type="submit" value="Registrar consumo"><br>

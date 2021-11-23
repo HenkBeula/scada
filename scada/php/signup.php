@@ -22,7 +22,7 @@ session_start();
 
 			//save to database
 			$user_id = random_num(5);
-			$query = "insert into cliente (user_id,Nome,cliente_login,cliente_pass) values ('$user_id','$username','$contact','$password')";
+			$query = "insert into cliente (user_id,Nome,cliente_login,cliente_pass) values ('$user_id','$username','$contact',MD5('$password'))";
 
 			mysqli_query($con, $query);
 

@@ -13,7 +13,7 @@
 <body>
 	<nav class="header">
 		<!-- Website icon -->
-		<a href="https://www.dotcom.co.mz/" target="_blank" style="margin: 1em;">
+		<a rel="https://www.dotcom.co.mz/" target="_blank" style="margin: 1em;">
 			<img src="images/fipag_logo.png" alt="fipag_logo">
 		</a>
 
@@ -26,16 +26,17 @@
 
 		<div>
 			<label for="contact">Contacto</label>
-			<input type="tel" id="contact" name="contact" placeholder="8X XXX XXXX" required>
+			<input type="tel" id="contact" name="contact" placeholder="  8X XXX XXXX" required>
 		</div><br>
 
 		<div>
 			<label for="password">Palavra passee</label>
-			<input type="password" id="password" name="password" placeholder=" * * * *" required>
+			<input type="password" id="password" name="password" placeholder="  * * * * * * * * * *" required>
 		</div><br>
 
-		<input type="submit" value="Entrar"><br>
+		<!--<p id="wr-pw" style="color: rgb(158, 27, 27); visibility: hidden;">Wrong username or password!</p>-->
 
+		<input type="submit" value="Entrar"><br>
 		<i id="login-link">Não tem uma conta? <a onclick="goToRegister()" href="signup.html">Cria aqui</a></i>
 	</form>
 

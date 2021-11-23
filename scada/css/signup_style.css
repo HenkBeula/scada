@@ -34,6 +34,7 @@ input:focus {
 
 input[type=submit] {
 	width: fit-content;
+	width: -moz-fit-content;
 	height: 4vh;
 	background-color: #7FA5CA;
 	font-size: 1em;
