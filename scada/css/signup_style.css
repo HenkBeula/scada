@@ -21,7 +21,8 @@ form div {
 }
 
 input {
-	border: 3px solid #CAD5E7;
+	height: 4vh;
+	border: 2px solid #CAD5E7;
 	border-radius:4px;
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
@@ -99,6 +100,13 @@ label {
  	border-left: 4px solid #7FA5CA;
 }
 
+.form-separator {
+	border-top: 1px solid lightgray;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	width: 86%;
+}
+
 #title {
 	font-size: 2em;
 	font-weight: 700;
@@ -118,3 +126,7 @@ label {
 #scada-logo{
 	width: 10em;
 }
+
+/*#password {
+	margin-top: 4px;
+}*/

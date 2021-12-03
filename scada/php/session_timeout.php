@@ -1,8 +1,8 @@
 <?php
-if (isset($_SESSION['start']) && (time() - $_SESSION['start'] > 450)) {
+if (isset($_SESSION['start']) && (time() - $_SESSION['start'] > 430)) {
     session_unset(); 
     session_destroy(); 
-    echo "session destroyed";
+    echo "Session destroyed";
     header("Location: login.html");
     die; 
 }

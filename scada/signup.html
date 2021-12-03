@@ -3,10 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>SCADA</title>
+	<title>SCADA - Sign up</title>
 
 	<!-- Favicon and CSS file load -->
 	<link rel="stylesheet" href="css/signup_style.css">
+	<link rel="stylesheet" href="css/message.css">
 	<link rel="icon" href="images/scada.png">
 </head>
 
@@ -40,28 +41,42 @@
 				<input type="tel" id="contact" name="contact" placeholder="8X XXX XXXX" required>
 			</div><br>
 
+			<div class="form-separator"></div><br>
+
 			<div>
-				<label for="password">Password</label>
-				<input type="password" id="password" name="password" placeholder="*************">
+				<label for="password">Palavra passe</label>
+				<input type="password" id="password" name="password" placeholder="*************" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+			</div><br>
+
+			<div>
+				<label for="password">Confirmar palavra passe</label>
+				<input type="password" id="confirm-password" name="password" placeholder="*************" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Both password must be the same" required>
 			</div><br>
 
 			<input type="submit" value="Registrar dados"><br>
 
 			<i id="login-link">Já tem uma conta? <a href="login.html">Entra aqui</a></i>
+			<!--<div id="message">
+				<h3>Password must contain the following:</h3>
+				<p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+				<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+				<p id="number" class="invalid">A <b>number</b></p>
+				<p id="length" class="invalid">Minimum <b>8 characters</b></p>
+			</div>-->
 		</form>
 	</div>
 
 	<footer class="company_info">
 		<address style="margin: 8px;">
-			Av. Filipe Samuel Magaia, nº 1291 R/C <br>Maputo - Moçambique <br>P.O. Box 91 
+			Av. Scada, nº 1111 R/C <br>Maputo - Moçambique <br>P.O. Box 007 
 		</address>
 
 		<div>
-			<p><b>Tel</b>: (+258) 21 308 881, (+258) 21 315529 <br><br><b>Fax</b>: (+258) 21 308 840</p>
+			<p><b>Tel</b>: (+258) 21 111 222, (+258) 21 333 444 <br><br><b>Fax</b>: (+258) 21 555 666</p>
 		</div>
 
 		<div>
-			<p>info@fipag.co.mz</p>
+			<p>info@scada.co.mz</p>
 		</div>
 
 		<div>

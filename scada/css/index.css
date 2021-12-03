@@ -21,12 +21,23 @@ form div {
 }
 
 input {
-	border: 3px solid #CAD5E7;
+	height: 4vh;
+	border: 2px solid #CAD5E7;
 	border-radius:4px;
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
 	outline: none;
 }
+
+select#provedor {
+	height: 4vh;
+	border: 2px solid #CAD5E7;
+	border-radius:4px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	outline: none;
+}
+
 
 input:focus {
 	border: 2px solid #7FA5CA;
@@ -122,6 +133,6 @@ label {
 	color: #246DC1;
 }
 
-#scada-logo{
+.header a img{
 	width: 10em;
 }
