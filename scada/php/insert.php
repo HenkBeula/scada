@@ -25,6 +25,7 @@ session_start();
 		$pay = $_POST['payment'];
 		$consumo = $_POST['consumed_water'];
 		$contacto = $_POST['contacto'];
+		$id_user=user_id($con);
 
 		if(!empty($provedor) && !empty($contador) && !empty($pay) && !empty($consumo) && !empty($contacto) && !empty($cash))
 		{
@@ -34,7 +35,7 @@ session_start();
 			$cur_month = date('M');
 			mysqli_query($con, $query);
 
-			$query = "insert into consumo_mensal (mes,quant_consumida,user_id) values ('$cur_month','$contador','$id_user')";
+			$query = "INSERT INTO consumo_mensal (consumo_mensal.mes,consumo_mensal.quant_consumida,consumo_mensal.user_id) VALUES ('$cur_month','$consumo','$id_user')";
 
 			mysqli_query($con, $query);
 
@@ -45,6 +46,14 @@ session_start();
 			echo "Please enter some valid information!";
 		}
 	}
+
+	function user_id($con){
+        if(isset($_SESSION['user_id'])){
+          $id = $_SESSION['user_id'];
+          return $id;
+        }
+          return null;
+      }
 ?>
 </body>
 </html>
