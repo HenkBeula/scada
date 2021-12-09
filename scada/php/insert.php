@@ -31,6 +31,10 @@ session_start();
 			//save to database
 			$id = random_num(15);
 			$query = "insert into report (id,provedor,contador,pagamento,consumo,cash,contacto) values ('$id','$provedor','$contador','$pay','$consumo','$cash','$contacto')";
+			$cur_month = date('M');
+			mysqli_query($con, $query);
+
+			$query = "insert into consumo_mensal (mes,quant_consumida,user_id) values ('$cur_month','$contador','$id_user')";
 
 			mysqli_query($con, $query);
 

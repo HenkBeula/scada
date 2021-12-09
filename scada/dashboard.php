@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
     <title>SCADA</title>
 
@@ -74,7 +73,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="php/report.php" target="blank">
                   <span data-feather="file-text"></span>
-                  Current month
+                  Presente mês
                 </a>
               </li>
             </ul>
@@ -95,8 +94,18 @@
     <?Php
       require("php/session.php");
       require("php/session_timeout.php");
-      require "php/config.php";// Database connection
-      if($stmt = $connection->query("SELECT mes,quant_consumida FROM consumo_mensal limit 12")){
+      require "php/config.php";
+      
+      //para retornar o id do utilizador
+      function user_id($con){
+        if(isset($_SESSION['user_id'])){
+          $id = $_SESSION['user_id'];
+          return $id;
+        }
+          return null;
+      }
+      $id=user_id($con);
+      if($stmt = $connection->query("SELECT DISTINCT consumo_mensal.mes, consumo_mensal.quant_consumida FROM consumo_mensal,cliente WHERE $id LIKE consumo_mensal.user_id limit 12")){
 
       //echo "No of records : ".$stmt->num_rows."<br>";
       $php_data_array = Array(); // create PHP array
