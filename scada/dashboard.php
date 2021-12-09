@@ -136,7 +136,7 @@
             for(i = 0; i < my_2d.length; i++)
         data.addRow([my_2d[i][0], parseInt(my_2d[i][1])]);
           var options = {
-              title: 'Consumo mensal (ultimos 12 meses)',
+              title: 'Consumo mensal',
               hAxis: {title: '',  titleTextStyle: {color: '#333'}},
               vAxis: {minValue: 0},
           width:1100,

@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>SCADA</title>
+	<title>SCADA-Payment</title>
 	<!-- Favicon and CSS file load -->
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="icon" href="images/scada.png">
@@ -24,16 +24,16 @@
 		</a>
 	</nav>
 
-	<form id="water_consumption" name="water_consumption" action="/php/insert.php" onsubmit="return validateForm()" method="POST">
+	<form id="water_consumption" name="water_consumption" action="php/insert.php" onsubmit="return validateForm()" method="POST">
 		<p id="title" >Consumo de água</p><br>
 
 		<div class="mb-3">
             <label class="form-label" for="provedor">Provedor</label>
-            <select class="form-select" id="provedor" aria-label="Provedor" style="height: 4vh;border: 2px solid #CAD5E7;border-radius:4px;-webkit-transition: 0.3s;transition: 0.3s;outline: none;" required>
+            <select class="form-select" id="provedor" aria-label="Provedor" name="provedor" style="height: 4vh;border: 2px solid #CAD5E7;border-radius:4px;-webkit-transition: 0.3s;transition: 0.3s;outline: none;" required>
 				<option value="FIPAG"></option>
-                <option value="FIPAG">FIPAG</option>
-                <option value="Águas de Moçambique">Águas de Moçambique</option>
-                <option value="Condomínio Intaka">Condomínio Intaka</option>
+                <option value="1">FIPAG</option>
+                <option value="3">Águas de Moçambique</option>
+                <option value="2">Condomínio Intaka</option>
             </select>
         </div><br>
 
@@ -45,7 +45,7 @@
 		<div >
 			
 			<label class="form-label" for="payment" style="width: 10em;">Pagamento</label>
-            <select class="form-select" id="payment" aria-label="Pagamento"  style="height: 4vh;border: 2px solid #CAD5E7;border-radius:4px;-webkit-transition: 0.3s;transition: 0.3s;outline: none;width: 12em;" required>
+            <select class="form-select" id="payment" aria-label="Pagamento" name="payment"  style="height: 4vh;border: 2px solid #CAD5E7;border-radius:4px;-webkit-transition: 0.3s;transition: 0.3s;outline: none;width: 12em;" required>
 				<option value="FIPAG"></option>
                 <option value="MPESA">MPESA</option>
                 <option value="EMOLA">EMOLA</option>
@@ -58,12 +58,17 @@
 			<input type="tel" id="consumed_water" name="consumed_water" placeholder="Metros cúbicos (m3)" required>
 		</div><br>
 
+		<div>
+			<label for="cash">Valor</label>
+			<input type="number" id="cash" name="cash" placeholder="10000" required>
+		</div><br>
+
 		<div class="mpesa_emola" style="display: block;">
 			<label for="Contacto">Contacto</label>
 			<input type="tel" id="cart_movel" name="contacto" placeholder="8X XXX XXXX"  required>
 		</div><br>
 
-		<input type="submit" value="Proseguir"><br>
+		<input type="submit" id="finalize_pay" value="Proseguir" onsubmit="transationStatus()" ><br>
 	</form>
 
 	<footer class="company_info">

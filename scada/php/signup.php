@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
 <body>
-	Welcome1
 <?php 
 session_start();
 
@@ -16,6 +15,7 @@ session_start();
 		$address = $_POST['address'];
 		$contact = $_POST['contact'];
 		$password = $_POST['password'];
+		$contador = $_POST['contador'];
 
 		if(!empty($username) && !empty($password) && is_numeric($contact) && !empty($contact) && !empty($address))
 		{
@@ -24,6 +24,14 @@ session_start();
 			$user_id = random_num(5);
 			$query = "insert into cliente (user_id,Nome,cliente_login,cliente_pass) values ('$user_id','$username','$contact',MD5('$password'))";
 
+			mysqli_query($con, $query);
+			
+			$casa_id = random_num(10);
+			$query = "insert into casa (id,Bairro,idCliente) values ('$casa_id','$address','$user_id')";
+
+			mysqli_query($con, $query);
+
+			$query = "insert into contador (id,idCasa) values ('$contador','$casa_id')";
 			mysqli_query($con, $query);
 
 			header("Location: ../login.html");
