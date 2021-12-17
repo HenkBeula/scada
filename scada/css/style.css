@@ -6,30 +6,6 @@ body {
 	margin: 0px;
 }
 
-form {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
-
-form div {
-	margin: 4px;
-	float: right;
-}
-
-
-select#provedor {
-	height: 4vh;
-	border: 2px solid #CAD5E7;
-	border-radius:4px;
-	-webkit-transition: 0.3s;
-	transition: 0.3s;
-	outline: none;
-}
-
 label {
 	padding-right: 4px;
 	border-right: 3px solid #7FA5CA;
@@ -52,7 +28,6 @@ label {
 	font-size: 3.6em;
 	font-weight: 900;
 	font-style: italic;
-	/*text-align: center;*/
 }
 
 a {
@@ -87,20 +62,9 @@ a {
 	margin: 0;
 }
 
-#login-link {
-	font-size: 0.9em;
-	color: #707070;
-}
-
-#login-link a {
-	color: #246DC1;
-}
-
 .header a img{
 	width: 10em;
 }
-
-
 
 #sucess_ico{
 	width: 10rem;
@@ -117,8 +81,6 @@ a {
 #sucess_message{
 	display: block;
 }
-
-
 
 #report_tab tr th p{
 	font-weight: normal;
@@ -145,6 +107,7 @@ a {
 
 .conteiner {
 	position: absolute;
+	display: block;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
@@ -167,8 +130,4 @@ a {
 #getReport p :hover{
 	color: white;
 	background-color: #4e4e4e;
-}
-
-.conteiner{
-	size: 10rem;
 }

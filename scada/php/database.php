@@ -4,7 +4,7 @@ class Database {
 	private $user = "root";
 	private $password = "";
 	private $database = "scada";
-	
+  
 	function runQuery($sql) {
 		$conn = new mysqli($this->host,$this->user,$this->password,$this->database);
     if ($conn->connect_error) {
