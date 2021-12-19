@@ -6,7 +6,7 @@ body {
 	margin: 0px;
 }
 
-form {
+.water_consumption {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -15,7 +15,7 @@ form {
 	text-align: center;
 }
 
-form div {
+.water_consumption div {
 	margin: 4px;
 	float: right;
 }
@@ -27,6 +27,16 @@ input {
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
 	outline: none;
+}
+
+.pay_button {
+	height: 4vh;
+	border: 2px solid #CAD5E7;
+	border-radius:4px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	outline: none;
+	margin-left: 0.9rem;
 }
 
 select#provedor {
@@ -41,19 +51,23 @@ select#provedor {
 
 input:focus {
 	border: 2px solid #7FA5CA;
+
 }
 
 input[type=submit] {
-	width: -moz-fit-content;
-	width:fit-content;
-	height: 4vh;
+	width: 14vh;
+    height: 6vh;
 	background-color: #7FA5CA;
 	font-size: 1em;
-	margin-top: 8px;
+	/*margin-top: 8px;*/
+	margin: 10px;
 	outline: none;
 	border: none;
 	color:rgb(54, 52, 52);
+	/*padding: 1rem;*/
+
 }
+
 
 input[type=submit]:hover {
 	color: #CAD5E7;
@@ -61,7 +75,7 @@ input[type=submit]:hover {
 	cursor: pointer;
 }
 
-label {
+.form-label {
 	padding-right: 4px;
 	border-right: 3px solid #7FA5CA;
 	color: #707070;
@@ -187,4 +201,28 @@ label {
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	text-align: center;
+}
+
+#credit_card{
+	display: none;
+}
+
+#mpesa{
+	display: none;
+}
+
+
+#mpesa_popup:hover{
+	background-color: #cc1717;
+	color: #fff;
+}
+
+#emola_popup:hover{
+	background-color: #fd7a00;
+	color: #fff;
+}
+
+#card_popup:hover{
+	background-color: #1672fc;
+	color: #fff;
 }
