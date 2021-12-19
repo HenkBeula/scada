@@ -16,6 +16,7 @@ session_start();
 		$contact = $_POST['contact'];
 		$password = $_POST['password'];
 		$contador = $_POST['contador'];
+		$tipoContador = $_POST['tipoContador'];
 
 		if(!empty($username) && !empty($password) && is_numeric($contact) && !empty($contact) && !empty($address))
 		{
@@ -31,7 +32,7 @@ session_start();
 
 			mysqli_query($con, $query);
 
-			$query = "insert into contador (id,idCasa) values ('$contador','$casa_id')";
+			$query = "insert into contador (id,idCasa,tipo) values ('$contador','$casa_id','$tipoContador')";
 			mysqli_query($con, $query);
 
 			header("Location: ../login.html");

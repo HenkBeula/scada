@@ -2,7 +2,6 @@
 
 (function () {
   'use strict'
-
   feather.replace({ 'aria-hidden': 'true' })
 
   // Graphs
@@ -26,20 +25,8 @@
         'Dezembro',
       ],
       datasets: [{
-        data: [
-          1,
-          2,
-          0.5,
-          1,
-          1.2,
-          0.8,
-          0.7,
-          1.5,
-          0.8,
-          2.1,
-          1,
-          2.8
-        ],
+        data:
+         [1,2,3,4,5,6,5,4,3,2,1],
         lineTension: 0,
         backgroundColor: 'transparent',
         borderColor: '#007bff',

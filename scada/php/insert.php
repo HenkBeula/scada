@@ -34,11 +34,10 @@ session_start();
 			$query = "insert into report (id,provedor,contador,pagamento,consumo,cash,contacto) values ('$id','$provedor','$contador','$pay','$consumo','$cash','$contacto')";
 			$cur_month = date('M');
 			mysqli_query($con, $query);
-
-			$query = "INSERT INTO consumo_mensal (consumo_mensal.mes,consumo_mensal.quant_consumida,consumo_mensal.user_id) VALUES ('$cur_month','$consumo','$id_user')";
+			
+			$query = "insert into consumo_mensal (mes,quant_consumida,user_id) values ('$cur_month','$contador','$id_user')";
 
 			mysqli_query($con, $query);
-
 			header("Location: ../pos_payment.html");
 			die;
 		}else

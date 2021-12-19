@@ -136,3 +136,55 @@ label {
 .header a img{
 	width: 10em;
 }
+
+
+
+#sucess_ico{
+	width: 10rem;
+}
+
+#fail_ico{
+	width: 6rem;
+}
+
+#fail_message{
+	display: none;
+}
+
+#sucess_message{
+	display: none;
+}
+
+
+
+#report_tab tr th p{
+	font-weight: normal;
+	width: 110%;
+}
+
+.info{
+	text-align: left;
+	color: #707070;
+}
+
+.value{
+	text-align: right;
+	color: #4e4e4e;
+}
+
+#report_tab tr th #pay_value{
+	font-weight: bold;
+}
+
+#report_tab tr th h4 p{
+	font-weight: bold !important;
+}
+
+.conteiner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
