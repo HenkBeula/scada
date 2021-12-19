@@ -18,8 +18,9 @@ class Database {
     }
     $conn->close();
 
-		if(!empty($resultset))
+		if(!empty($resultset)){
 			return $resultset;
+    }
 	}
 }
 ?>
