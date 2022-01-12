@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SCADA - Sign up</title>
+
+	<!-- Favicon and CSS file load -->
+	<link rel="stylesheet" href="css/signup_style.css">
+	<link rel="stylesheet" href="css/message.css">
+	<link rel="icon" href="images/scada.png">
+</head>
+
+<body>
+	<nav class="header">
+		<!-- Website icon -->
+		<a href="home.html" target="_blank" style="margin: 1em;">
+			<img src="images/scada.png" alt="scada" id="scada-logo">
+		</a>
+
+		<!-- Website title -->
+		<b>SCADA</b>
+	</nav>
+
+	<div>
+		<form class="inputs" name="client_registration" action="php/signup.php" method="POST">
+			<p id="title" >Dados pessoais</p><br>
+
+			<div>
+				<label for="username">Nome</label>
+				<input type="text" id="username" name="username" placeholder="Primeiro nome e apelido" required>
+			</div><br>
+
+			<div>
+				<label for="address">Morada</label>
+				<input type="text" id="address" name="address" placeholder="Bairro, Quarteirao, nr casa" required>
+			</div><br>
+
+			<div>
+				<label for="contador">Contador</label>
+				<input type="text" id="contador" name="contador" placeholder="1234567890123" required>
+			</div><br>
+
+			<div class="mb-3">
+				<label class="form-label" for="tipoContador">Tipo</label>
+				<select class="form-select" id="tipoContador" aria-label="tipoContador" name="tipoContador" style="height: 4vh;border: 2px solid #CAD5E7;border-radius:4px;-webkit-transition: 0.3s;transition: 0.3s;outline: none;" required>
+					<option value=""></option>
+					<option value="Domestico">1.Contador domestico</option>
+					<option value="Industrial">2.Contador industrial</option>
+				</select>
+			</div><br>
+
+			<div>
+				<label for="contact">Contacto</label>
+				<input type="tel" id="contact" name="contact" placeholder="8X XXX XXXX" required>
+			</div><br>
+
+			<div class="form-separator"></div><br>
+
+			<div>
+				<label for="password">Palavra passe</label>
+				<input type="password" id="password" name="password" placeholder="*************" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+			</div><br>
+
+			<div>
+				<label for="password">Confirmar palavra passe</label>
+				<input type="password" id="confirm-password" name="password" placeholder="*************" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Both password must be the same" required>
+			</div><br>
+
+			<input type="submit" value="Registrar dados"><br>
+
+			<i id="login-link">Já tem uma conta? <a href="login.html">Entra aqui</a></i>
+			<!--<div id="message">
+				<h3>Password must contain the following:</h3>
+				<p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+				<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+				<p id="number" class="invalid">A <b>number</b></p>
+				<p id="length" class="invalid">Minimum <b>8 characters</b></p>
+			</div>-->
+		</form>
+	</div>
+
+	<footer class="company_info">
+		<address style="margin: 8px;">
+			Av. Scada, nº 1111 R/C <br>Maputo - Moçambique <br>P.O. Box 007 
+		</address>
+
+		<div>
+			<p><b>Tel</b>: (+258) 21 111 222, (+258) 21 333 444 <br><br><b>Fax</b>: (+258) 21 555 666</p>
+		</div>
+
+		<div>
+			<p>info@scada.co.mz</p>
+		</div>
+
+		<div>
+			<p>08h00 - 17h00</p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
