@@ -1,0 +1,122 @@
+* {
+	font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+body {
+	margin: 0px;
+}
+
+form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+form div {
+	margin: 4px;
+	float: right;
+	
+}
+
+input {
+	height: 4vh;
+	border: 2px solid #CAD5E7;
+	border-radius:4px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	outline: none;
+}
+
+input:focus {
+	border: 2px solid #7FA5CA;
+}
+
+input[type=submit] {
+	width: -moz-fit-content;
+	width: fit-content;
+	height: 4vh;
+	background-color: #7FA5CA;
+	font-size: 1em;
+	margin-top: 8px;
+	outline: none;
+	border: none;
+	color:rgb(54, 52, 52);
+}
+
+input[type=submit]:hover {
+	color: #CAD5E7;
+	background-color: #242424;
+	cursor: pointer;
+}
+
+label {
+	padding-right: 4px;
+	border-right: 3px solid #7FA5CA;
+	color: #707070;
+}
+
+.header {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	box-shadow: 0px 3px  6px rgba(0, 0, 0, .16);
+}
+
+.header b {
+	color: #07195B;
+	position: absolute;
+	left: 42%;
+	font-size: 3.6em;
+	font-weight: 900;
+	font-style: italic;
+}
+
+* a {
+	text-decoration: none;
+	color: #000;
+}
+
+.company_info {
+	width: 58%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	left: 50%;
+	bottom: 2.5%;
+	-webkit-transform: translate(-42%);
+ 	transform: translate(-42%);
+ 	font-weight:lighter;
+	font-size: 0.8em;
+}
+
+.company_info div {
+	display: flex;
+ 	margin: 4px;
+ 	padding: 8px;
+ 	border-left: 4px solid #7FA5CA;
+}
+
+#title {
+	font-size: 2em;
+	font-weight: 700;
+	color: #4e4e4e;
+	margin: 0;
+}
+
+#login-link {
+	font-size: 0.9em;
+	color: #707070;
+}
+
+#login-link a {
+	color: #246DC1;
+}
+
+#scada-logo{
+	width: 10em;
+}

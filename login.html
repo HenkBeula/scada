@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SCADA - Login</title>
+
+	<!-- Favicon and CSS file load -->
+	<link rel="stylesheet" href="css/login_style.css">
+	<link rel="icon" href="images/scada.png">
+</head>
+
+<body>
+	<nav class="header">
+		<!-- Website icon -->
+		<a rel="https://www.dotcom.co.mz/" target="_blank" style="margin: 1em;">
+			<img src="images/scada.png" alt="scada" id="scada-logo">
+		</a>
+
+		<!-- Website title -->
+		<b>SCADA</b>
+	</nav>
+
+    <form id="login" name="login" action="php/login.php" method="POST">
+		<p id="title" >Login</p><br>
+
+		<div>
+			<label for="contact">Contacto</label>
+			<input type="tel" id="contact" name="contact" placeholder="  8X XXX XXXX" required>
+		</div><br>
+
+		<div>
+			<label for="password">Palavra passee</label>
+			<input type="password" id="password" name="password" placeholder="  * * * * * * * * * *" required>
+		</div><br>
+
+		<!--<p id="wr-pw" style="color: rgb(158, 27, 27); visibility: hidden;">Wrong username or password!</p>-->
+
+		<input type="submit" value="Entrar"><br>
+		<i id="login-link">Não tem uma conta? <a onclick="goToRegister()" href="signup.html">Cria aqui</a></i>
+	</form>
+	<footer class="company_info">
+		<address style="margin: 8px;">
+			Av. Scada, nº 1111 R/C <br>Maputo - Moçambique <br>P.O. Box 007 
+		</address>
+
+		<div>
+			<p><b>Tel</b>: (+258) 21 111 222, (+258) 21 333 444 <br><br><b>Fax</b>: (+258) 21 555 666</p>
+		</div>
+
+		<div>
+			<p>info@scada.co.mz</p>
+		</div>
+
+		<div>
+			<p>08h00 - 17h00</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
