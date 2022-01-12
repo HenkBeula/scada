@@ -1,10 +1,6 @@
 # scada
 ## Desenvolvimento de um sistema de controlo de Abastecimento de Agua
-<html>
-<head>
-</head>
-<body>
-  
+
 <div style="text-align: justify;">
   Desenvolvimento de um sistema de controlo de Abastecimento de Agua
   Interface amigável e relacionada. Deve apresentar o logótipo da Empresa proprietária da Fabrica. 
@@ -14,5 +10,4 @@
   em referência. Deve emitir um recibo que confirma o pagamento do valor pelo consumo de agua 
   do Cliente.
 </div>
-</body>
-</html>
+
